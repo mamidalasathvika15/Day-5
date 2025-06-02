@@ -1,64 +1,51 @@
-# Day-4  
-# 🚀 Decision Trees & Random Forests on Titanic Dataset
+# Day-5 
+# 🚀 Decision Trees and Random Forests on Titanic Dataset
 
 ## 📌 Objective  
-This project demonstrates the implementation and understanding of **tree-based models** — Decision Trees and Random Forests — for classification, applied to predict Titanic passenger survival based on their features.
+Learn and implement tree-based models for classification using the Titanic dataset.
 
 ---
 
 ## 🛠️ Tools & Libraries Used  
 - Python 3  
-- Pandas – for data handling  
-- Scikit-learn – for model training, visualization, and evaluation  
-- Matplotlib & Seaborn – for plotting graphs and feature importances  
-
----
-
-## 📂 Dataset  
-- Dataset used: `titanic_cleaned.csv`  
-- Preprocessed Titanic dataset with features like `Pclass`, `Sex`, `Age`, `SibSp`, `Parch`, `Fare`, and embarked indicators  
-- Target column: `Survived` (0 = did not survive, 1 = survived)  
+- Pandas  
+- Scikit-learn  
+- Matplotlib (for plotting feature importances)  
 
 ---
 
 ## 📈 Project Workflow  
 
-1. **Data Import & Preprocessing**  
-   - Load dataset with `pd.read_csv()`  
-   - Select relevant features and target  
-   - Handle missing values (age, embarked)  
-   - Encode categorical variables using `LabelEncoder`  
+1. **Train a Decision Tree Classifier**  
+   - Train on Titanic dataset features to predict survival  
+   - Visualize the decision tree structure  
 
-2. **Train Decision Tree Classifier & Visualization**  
-   - Train Decision Tree model with default parameters  
-   - Visualize the tree using text-based output (due to Graphviz limitations)  
+2. **Analyze Overfitting and Control Tree Depth**  
+   - Experiment with tree depth to prevent overfitting  
+   - Compare training and test accuracies for different depths  
 
-3. **Overfitting Analysis & Tree Depth Control**  
-   - Limit maximum depth of Decision Tree to reduce overfitting  
-   - Compare training and testing accuracy for different depths  
+3. **Train a Random Forest Classifier**  
+   - Train ensemble model with multiple trees  
+   - Compare accuracy with Decision Tree  
 
-4. **Train Random Forest Classifier & Accuracy Comparison**  
-   - Train Random Forest model with 100 trees  
-   - Compare its accuracy against Decision Tree  
+4. **Interpret Feature Importances**  
+   - Extract and plot feature importance from Random Forest  
 
-5. **Interpret Feature Importances**  
-   - Extract and plot feature importances from Random Forest model  
-
-6. **Model Evaluation Using Cross-Validation**  
-   - Use 5-fold cross-validation to evaluate stability and performance of models  
+5. **Evaluate Using Cross-Validation**  
+   - Use k-fold cross-validation to assess model stability and performance  
 
 ---
 
 ## 📊 Output & Results  
-- Decision Tree accuracy and controlled depth results  
-- Random Forest accuracy comparison (usually higher than single tree)  
-- Visualization of feature importances indicating most influential variables for survival prediction  
-- Cross-validation scores summarizing model robustness  
+- Decision Tree and Random Forest accuracies  
+- Visualization of decision tree (text-based or plot)  
+- Feature importance bar chart  
+- Cross-validation accuracy scores  
 
 ---
 
 ## 📌 Conclusion  
-This project builds and compares tree-based models on the Titanic dataset, highlighting the importance of model complexity control, ensemble learning via Random Forests, and interpreting feature contributions to predictions.
+Today's work demonstrates the power of tree-based models and ensemble learning, showing how controlling model complexity and combining trees improves prediction accuracy and robustness.
 
 ---
 
